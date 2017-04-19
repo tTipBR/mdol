@@ -1,0 +1,364 @@
+/* CSS: Cascade Style Sheet ou Folha de Estilos em Cascata.
+		No CSS definimos todos os nossos estilos */	
+		html, body {height: 100%; 
+					min-height: 100%; 
+					margin: 0; 
+					padding: 0;
+		}
+		/* header < >*/
+		.ttip-div-header{
+			height: auto; 
+			width: 100%; 
+			background-color:#EFFBF8; /*#A9F5A9;*/ 
+			margin: 0; 
+			display: inline-block;
+			position: relative;
+			min-width: 15em;
+			border-bottom: 2px solid #FFA0A0;
+			padding: 0;
+		}
+		.ttip-div-header img{
+			width: 7em;
+			height: 5em;
+			float: left;
+			margin-left:5em;			
+		}
+		.ttip-div-header label{
+			font-family: Verdana, Arial;
+			font-size: 1em;
+			color:#0000FF;
+			margin:0.2em;
+			float: left;
+			width: 10em;
+			min-width: 5em;
+			margin-left: 4em;
+			display: inline-block;
+			position: relative;
+		}
+		.ttip-div-header label input{
+			font-family: Verdana, Arial;
+			margin:0.5em;
+			width:15em;
+		}
+		/* header </>*/
+		
+		/* body < >*/
+		.ttip-div-body{
+			height:auto;
+			width:100%;
+			background-color:#FAFAFA;
+			display:inline-block;
+			margin:0.2em 0 0.4em 0;
+			padding:0;
+			position:relative;
+			min-width: 100%;
+			min-height: 30.4em; /* min-height serve para posicionar o rodapé.*/
+		}
+		.ttip-div-body h2{
+			text-align: justify;
+			font-family: Verdana, Arial;
+			font-size: 1.5em;
+			color: #0404B4;
+		}
+		/* body </>*/
+		
+		/* conteudos < >*/
+		.ttip-botoes{
+			background-color:#2E2EFE;
+			width: 7em;
+			height: 2em;
+			border: 0px;
+			color: #FFFFFF;	
+			cursor: pointer;
+			border: solid #0404B4;	
+			text-align: center;
+		}
+		.ttip-cadastrocampogrande{
+			width:100%;
+			min-width: 15em;
+			height: auto; 
+			margin: 0; 
+			display: inline-block;
+			padding: 0;
+		}
+		.ttip-cadastrocampomedio{
+			width:10em;
+			height: auto; 
+			margin: 0; 
+			display: inline-block;
+			padding: 0;
+		}
+		.ttip-cadastrocampopequeno{
+			width:5em;
+			height: auto; 
+			margin: 0; 
+			display: inline-block;
+			padding: 0;
+		}
+		.ttip-div-centro{
+			width: 50%; 
+			height: auto; 
+			float: center;
+			margin: auto;
+			min-width: 15em;
+			border: 2px solid #EFFBF8;
+			background-color: #FFF;
+		}
+		.ttip-div-centro table{
+			width:100%;
+		}
+		.ttip-div-centro table tr td{
+			font-family: Verdana, Arial;
+			font-size: 1.4em;
+			color: #0404B4;
+			margin: 0;
+			width: 100%;
+		}
+		.ttip-div-centro table tr td select{
+			margin: 0;
+			min-height: 1.8em;
+			padding: 0;	
+			min-width: 12em;
+		}
+		.ttip-div-centro table tr td textarea{
+			margin: 0;
+			min-height: 10em;
+			padding: 0;	
+			min-width: 15em;
+			width: 100%;
+		}
+		.ttip-div-carrossel{
+			width:	48%; 
+			height:	auto; 
+			float:	left; 
+			border: solid #0101DF;
+			font-family: Verdana, Arial;
+			font-size: 1em;
+			color: #0404B4;
+			background-color: #FFF;
+			margin: 0.2em;
+			min-width: 15em;
+		}
+		.ttip-div-menu-lateral{
+			width: auto;
+			background: #FAFAFA;
+			float: left;
+			padding: 0;
+			margin: 0.2em;
+			position: relative;
+			display: inline-block;
+			min-width: 15em;
+
+		}
+		.ttip-div-menu-lateral ul {
+			list-style: none;
+			margin: 0.2em;
+		}
+		.ttip-div-menu-lateral ul li {
+			border-bottom: 0.2em solid #FFF;
+			background-color: #FFA0A0;
+			text-align: center;
+			padding: 0;
+			width: auto;			
+		}
+		.ttip-div-menu-lateral ul li a{
+			display: block;
+			font-family: Verdana, Arial;
+			font-size: 1.4em;
+			color:#0404B4;
+			padding: 1em;
+			text-decoration: none;
+		}
+		.ttip-div-menu-lateral ul li a:hover{
+			background: #F8E0E6;
+			border: 0.3em solid #FFF;
+			padding: 1em;
+			margin: 0;
+		}
+		.ttip-div-menu-lateral ul li ul{
+			display: none;
+			margin: 0;
+		}
+		.ttip-div-menu-lateral ul li:hover ul{
+			display: block;
+		}
+		.ttip-div-menu-lateral ul li:hover ul li{
+			background-color: #FFA0A0;
+			text-align: center;
+			padding: 0;
+			width: 100%;
+			
+		}
+		.ttip-div-menu-lateral ul li:hover ul li a{
+			font-family: Verdana, Arial;
+			font-size: 1.2em;
+			color: #04044;
+		}
+		.ttip-div-menu-lateral ul li:hover ul li a:hover{
+			background: #F8E0E6;
+			border: 0.3em solid #FFF;
+			padding: 1em;
+			margin: 0;
+		}
+		.ttip-div-menu{
+			width: 100%;
+			background: #A9F5A9;
+			float: left;
+			padding: 0;
+			margin: 0;
+			display: inline-block;
+			min-width: 15em;
+			position: relative;
+		}
+		.ttip-div-menu ul{
+			text-align: center;
+			list-style: none;
+			padding: 0;
+			margin: 0;
+		}
+		.ttip-div-menu ul li{
+			display: inline-block;
+			padding:0;
+			background: yellow;
+			width:12%;
+			height:2.5em;
+			line-height: 2.5em;
+			min-width: 10em;
+			position:relative;
+			border: 0.1em solid red;
+			margin: 0;
+			
+		}
+		.ttip-div-menu ul li a{
+			font-family: Verdana, Arial;
+			font-size: 1.2em;
+			color: #0000FF;
+			text-decoration: none;
+			display: block;
+		}
+		.ttip-div-menu ul li a:hover{
+			color: #000FA0;
+		}
+		.ttip-div-menu ul ul{
+			position: absolute;
+			padding: 0;
+			margin: 0;
+			display: none;
+		}
+		.ttip-div-menu ul li:hover > ul{
+			display: block;
+		}
+		.ttip-form-cadastro{
+			width:50%;
+			min-width: 15em;
+			height: auto; 
+			margin: 0; 
+			background:#FFF;
+			display: inline-block;
+			border: 2px solid #EFFBF8;
+			margin: 0.3em;
+		}
+		.ttip-form-cadastro table tr td{
+			font-family: Verdana, Arial;
+			font-size: 1em;
+			color: #0404B4;
+			display: inline-block;
+			margin: 0.2em;
+		}
+		.ttip-form-pag-entrada{
+			width:	48%; 
+			height:	auto; 
+			float: left;			
+			border: solid #0101DF;
+			background-color: #CEE3F6;
+			margin: 0.2em;
+			min-width: 15em;
+		}
+		.ttip-form-pag-entrada table tr td{
+			font-family: Verdana, Arial;
+			font-size: 1.4em;
+			color:#0404B4;
+			margin:0;
+			min-width: 100%;
+		}
+		.ttip-form-pag-entrada table tr td input{
+			font-family: Verdana, Arial;
+			margin:0.5em;
+			width:100%;	
+			margin:0.2em 0.2em 0.1em 0;
+		}		
+		/* conteudos </>*/
+
+		/* rodapé < >*/
+		.ttip-div-rodape{
+			background-color:#137666;
+			font-family: Verdana, Arial;
+			font-size:15px;
+			color:#FFFFFF;
+			position: relative;
+			border-top: 2px solid #FFA0A0;
+			bottom:0;
+			width: 100%;
+			height: auto;
+			min-width:15em;
+			min-height:10%;
+			display: inline-block;
+		}
+		.ttip-div-rodape a {
+			color:#ffffff;
+			float:left;
+			position:relative;
+			display:inline;
+			bottom:0;
+			text-transform:capitalize;
+			padding:10px 15px;
+			margin:0;
+		}
+		.ttip-div-rodape a:link, a:visited {
+			text-decoration: none;
+			color: #FFF;
+			}
+		.ttip-div-rodape a:hover {
+			text-decoration: underline;
+			color:#04B404; 
+			
+			}
+		.ttip-div-rodape a:active {
+			text-decoration: none
+			}
+		/* rodapé </ >*/
+		
+		/* quando passar o mouse no link mudar cor*/
+		
+		.menu-lista-ul{
+			font:18px arial, verdana;
+			list-style:none;
+			margin:0;
+			padding:0;
+		}
+		/*link, qualquer endereço clicavel da página*/
+		.menu-link{
+			color:#ffffff;
+			background-color:#000000;
+			text-decoration:none;
+			margin:0 1px;
+			padding:10px 15px;
+			text-transform:capitalize;
+		}
+		/*border-top:1px solid #FFFFFF;*/
+		.menu-subitem{
+			display:none;
+		}
+		#nav ul li a:hover{
+							background:#fff;
+							color:#000;
+		}
+		#nav li:hover ul{
+							display:block;
+							position:relative;
+			
+		}
+		#nav li:hover li{
+							float:none;
+							font-size:12px;
+		}
