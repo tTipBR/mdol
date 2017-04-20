@@ -3,17 +3,17 @@
 	function validarentrada(){
 		
 		if(document.cadastro.nome.value =="" || document.cadastro.nome.value == " "){
-			alert("campo nome nao pode estar vazio");
+			alert("Campo NOME não pode estar vazio");
 			document.cadastro.nome.focus();
 			return false;
 		}
 		if(document.cadastro.email.value== "" || document.cadastro.email.value == " " || document.cadastro.email.value.indexOf('@')== -1 || document.cadastro.email.value.indexOf('.')== -1){
-			alert("digitar email correto!!");
+			alert("O e-Mail digitado não é válido");
 			document.cadastro.email.focus();
 			return false;
 		}
 		if(document.cadastro.senha.value=="" || document.cadastro.senha.value == " "){
-			alert("campo senha nao pode ser nada");
+			alert("Campo SENHA deve ser informado");
 			document.cadastro.senha.focus();
 			return false;
 		}
