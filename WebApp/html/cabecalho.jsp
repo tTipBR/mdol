@@ -2,9 +2,9 @@
 <div class="ttip-div-header">
 	<img src="../img/tTip-LOGO.png"></img>
 	<form method="post" action="http://kleber-ntbk:8080/br.com.ttip.mdol/login/acessar">	
-		<c:if test="${login == null}">
 		
 		<div style=" background:#EFFBF8; height: auto; float:right; margin: 1em; min-width: 19em;">
+		
 			<label>Login 
 				<input type="text" name="email" maxlength="150" size="20"/>
 			</label>
@@ -16,10 +16,14 @@
 			<label>  
 				<input style="width: 7em; margin-top:1.8em;" class="ttip-botoes" id="entrar" name="ed-entrar" type="submit" value="Entrar"/>
 			</label>
+			
+			<!-- c:if é uma TagLib, faz parte da linguagem JSTL, utilizada para programar páginas JSP -->
+			<c:if test="${msgErro != null && msgErro != ''}">
+				<br><label style="color: #F00;">${msgErro}</label>
+			</c:if>				
+			
 		</div>
-		
-		</c:if>
-		
+				
 		<!--<c:if test="${login != null}">
 			<tr>
 				<td class="cadastro">Nome: </td>
