@@ -1,6 +1,6 @@
 
 <div class="ttip-div-header">
-	<img src="${pageContext.request.contextPath}/img/tTip-LOGO.png"></img>
+	<img src="../img/tTip-LOGO.png"></img>
 	<form method="post" action="http://kleber-ntbk:8080/br.com.ttip.mdol/login/acessar">	
 		<c:if test="${login == null}">
 		

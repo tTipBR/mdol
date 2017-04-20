@@ -4,16 +4,15 @@
 	<head>
 		<title>BEM-VINDOS AO MEU DIÁRIO ON-LINE</title> 
 		
-		<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/estilos.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/estilos.css"/>
 		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-		<script type="text/javascript" src="${pageContext.request.contextPath}/js/funcoes.js"></script>
+		<script type="text/javascript" src="../js/funcoes.js"></script>
 
 	</head>
 	
 	<body>
 		<%@include file="cabecalho.jsp" %>
-		<div class="ttip-div-body">
-		
+		<div class="ttip-div-body">		
 			<div class="ttip-div-carrossel">
 			
 				<p>carrossel</p><br>
