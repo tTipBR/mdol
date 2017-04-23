@@ -16,8 +16,8 @@
 			</label>
 			
 			<!-- c:if é uma TagLib, faz parte da linguagem JSTL, utilizada para programar páginas JSP -->
-			<c:if test="${msgErro != null && msgErro != ''}">
-				<br><label style="color: #F00;">${msgErro}</label>
+			<c:if test="${erro != null && erro != ''}">
+				<br><label style="color: #F00;">${erro}</label>
 			</c:if>				
 			
 		</div>
