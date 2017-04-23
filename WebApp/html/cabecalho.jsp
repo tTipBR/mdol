@@ -1,11 +1,9 @@
 
 <div class="ttip-div-header">
 	<img src="../img/tTip-LOGO.png"></img>
-	<form method="post" action="http://kleber-ntbk:8080/br.com.ttip.mdol/login/acessar">	
-		
-		<div style=" background:#EFFBF8; height: auto; float:right; margin: 1em; min-width: 19em;">
-		
-			<label>Login 
+	<form method="post" action="${pageContext.request.contextPath}/login/acessar">	
+		<div style="background:#EFFBF8; height: auto; float:right; margin: 1em; min-width: 19em;">
+			<label>Login
 				<input type="text" name="email" maxlength="150" size="20"/>
 			</label>
 

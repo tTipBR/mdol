@@ -45,7 +45,7 @@ public class LoginAcessar extends HttpServlet {
 		Login login = be.getByEMail(request.getParameter("email"));
 		
 		try {
-		
+					
 			if (login == null) {
 				throw (new IOException("e-Mail inválido ou não cadastrado"));
 			}
@@ -54,11 +54,20 @@ public class LoginAcessar extends HttpServlet {
 				throw (new IOException("Senha inválida"));
 			}
 			
+			if (request.getSession() == null) {
+				System.out.println("Neste momento eu criaria uma sessão");
+			}
+
+			request.getSession(true).setAttribute("session.login", login);
+			RequestDispatcher rd = request.getRequestDispatcher("/html/inicio.jsp");
+			
+			rd.forward(request, response);		
+			
 		}
 		
 		catch (IOException e) {
 			
-			request.setAttribute("msgErro", e.getMessage());
+			request.setAttribute("erro", e.getMessage());
 			response.setStatus(403);
 			
 			RequestDispatcher rd = request.getRequestDispatcher("/html/entrada.jsp");
@@ -66,8 +75,6 @@ public class LoginAcessar extends HttpServlet {
 			
 		}
 				
-		response.getWriter().append("<html><body>OK, usuário e senha válidos <h3>VAMOS EM FRENTE ;)</h3></body></html>");
-
 	}
 
 }

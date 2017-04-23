@@ -20,7 +20,7 @@
 				<p>carrossel</p><br>
 			</div>
 		
-			<form class="ttip-form-pag-entrada" name="cadastro" onsubmit="return validarentrada()" method="post" action="http://kleber-ntbk:8080/br.com.ttip.mdol/login/cadastrar">
+			<form class="ttip-form-pag-entrada" name="cadastro" onsubmit="return validarentrada()" method="post" action="${pageContext.request.contextPath}/login/cadastrar">
 				
 				<h2>Crie sua conta e comece a usar em 1 minuto!!!</h2>
 				<table>
