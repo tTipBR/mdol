@@ -1,7 +1,7 @@
 
 <div class="ttip-div-header">
+	<img src="../img/tTip-LOGO.png"></img>
 	<c:if test="${login == null}">
-		<img src="../img/tTip-LOGO.png"></img>
 		<form method="post" action="${pageContext.request.contextPath}/login/acessar">	
 			<div style="background:#EFFBF8; height: auto; float:right; margin: 1em; min-width: 19em;">
 				<label>Login
@@ -20,46 +20,12 @@
 				<c:if test="${erro != null && erro != ''}">
 					<br><label style="color: #F00;">${erro}</label>
 				</c:if>
-		</div>
-		
-		<c:if test="${login != null}">
-			<h1>Olá, seja bem vindo!! </h1> ${login}	
-		</c:if>
+			</div>
+		</form>
 	</c:if>
-				
-		<!--<c:if test="${login != null}">
-			<tr>
-				<td class="cadastro">Nome: </td>
-				<td align="left">${login.nome}</td>
-			</tr>
-			
-			<tr>
-				<td class="cadastro">Email: </td>
-				<td align="left">${login.email}</td>
-			</tr>
-			
-			<tr>
-				<td align="left">
-					<input id="sair" name="sair" type="submit" value="Sair" class="botoes"/>
-				</td>
-			</tr>
-			
-			<div style="height:100%; width:40%; margin0; float:right; background:#FFFF00">
-		<c:if test="${login == null}">
-			<div class="div-logincabecalho">Login <input type="text" name="login" maxlength="30" class="cadastrocampo"/>
-			</div>
-				
-			<div class="div-logincabecalho">Senha <input type="password" name="senha" maxlength="30" class="cadastrocampo"></input>
-			</div>
-			
-			<div style="float:right; margin:0;">
-				<input id="entrar" name="entrar" type="submit" value="Entrar" class="ttip-botoes"/>
-			</div>
-
-		</c:if>
-			
-			
-		</c:if>-->
-	</form>
+	
+	<c:if test="${login != null}">
+		<h1>Olá, seja bem vindo!! </h1> ${login}	
+	</c:if>
 </div>
 
