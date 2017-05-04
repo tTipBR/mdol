@@ -1,0 +1,19 @@
+CAMPO			DESCRIÇÃO								TAM
+---------------------------------------------------------------------------------------------------
+Nome			Nome do aluno								50
+Gênero			M: Masculino/F: Feminino							1
+Data de nascimento	dd/mm/aaaa								10
+CPF			999.999.999-99								14
+RG			Permitir apenas número, "." e "-"					15
+Órgão emissor		(exemplo: SSP/MT)							10
+CEP			99.999-999								10
+Endereco											50
+Número			Letras e números							6
+Estado (UF)											2
+Cidade			Será filtrada conforme estado						50
+Bairro			Filtrado conforme cidade						50
+Complemento											50
+Telefone 1		Somente números, formatar: (99) 9999-9999, (99) 999-999-999		13
+Telefone 2											13
+Telefone 3											13
+e-Mail												40

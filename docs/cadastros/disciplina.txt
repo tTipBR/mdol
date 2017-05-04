@@ -1,0 +1,7 @@
+CAMPO		DESCRIÇÃO							TAMANHO
+---------------------------------------------------------------------------------------
+Nome		Nome da disciplina (ex: Português, Matemática, etc)		50
+Abreviatura	Nome abreviado (PTG, MAT)					5
+Carga horária	Em horas (somente números)					3
+Ementa		Conteúdo previsto para o ano					Livre
+Bibliografia	Material de apoio recomendado ao professor			Livre

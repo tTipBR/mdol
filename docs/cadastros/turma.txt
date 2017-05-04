@@ -1,0 +1,10 @@
+CAMPO			DESCRIÇÃO								TAM
+---------------------------------------------------------------------------------------------------
+Nome			Nome da turma, ex: PRIMEIRO ANO (A), SEGUNDO ANO (NOT), etc		50
+Período			Matutino, Vespertino, Noturno ou Integral
+Hora inicio		Horário de início da aula, ex: 07:00					5
+Inicio intervalo	Hora de início do intervalo, não pode ser inferior à hora início	5
+Fim intervalo		Fim do intervalo, não pode ser inferior ao inic intervalo, nem		5
+			superior a hora fim
+Hora fim		Horário final, ex: 11:30						5
+Identificação sala	Texto livre para identificar a sala					5
