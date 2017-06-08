@@ -183,3 +183,14 @@
 		
 	}
 	/* ajax </> */
+	
+	function buscaCep(cep){
+		var xhttp = new XMLHttpRequest();
+			xhttp.onreadystatechange = function() {
+				if (this.readyState == 4 && this.status == 200) {
+					alert(this.responseText);
+				}
+			};
+		xhttp.open("GET", "http://kleber-ntbk:8080/br.com.ttip.mdol/endereco/consultar?cep=" + cep.value, true);
+		xhttp.send();
+	}
